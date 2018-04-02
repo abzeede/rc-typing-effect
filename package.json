@@ -30,10 +30,9 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
   },
-  "author": "Markus Englund <markus.s.englund@gmail.com>",
-  "homepage": "https://github.com/yogaboll/react-npm-component-starter",
+  "author": "Purijit Vongviseskij <pvongviseskij@yahoo.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yogaboll/react-npm-component-starter.git"
+    "url": "https://github.com/abzeede/rc-typing-effect"
   }
 }
