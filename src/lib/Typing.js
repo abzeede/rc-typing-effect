@@ -4,18 +4,6 @@ import './typing.css'
 
 let timeout
 class Typing extends React.Component {
-  propTypes = {
-    message: string,
-    delay: number,
-    cpms: number,
-  }
-  defaultProps = {
-    message: '',
-    /** Delay in millisecond */
-    deplay: 0,
-    /** Character per millisecond */
-    cpms: 125,
-  }
   state = {
     totalVisibilityChar: 1,
   }
@@ -42,13 +30,28 @@ class Typing extends React.Component {
   )
 
   render () {
-    return (
+    return this.props.message !== '' ? (
       <div>
         {this.renderMessage()}
         <span className={`keyboard-cursor ${this.shouldBlink() ? 'blink' : ''}`}>|</span>
       </div>
-    )
+    ) : null
   }
 }
 
+Typing.propTypes = {
+  message: string,
+  delay: number,
+  cpms: number,
+}
+
+Typing.defaultProps = {
+  message: '',
+  /** Delay in millisecond */
+  deplay: 3000,
+  /** Character per millisecond */
+  cpms: 125,
+}
+
 export default Typing
+defaultProps
