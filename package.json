@@ -1,10 +1,10 @@
 {
-  "name": "react-component-example-project",
-  "version": "0.1.3",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "name": "rc-typing-effect",
+  "version": "0.1.1",
+  "description": "A component that represent text as typing effect.",
   "main": "lib/index.js",
   "scripts": {
-    "lib": "babel src/lib -d lib",
+    "lib": "babel src/lib -d lib && cp src/lib/*.css lib",
     "lib:watch": "babel src/lib -w -d lib",
     "docs": "webpack-dev-server",
     "docs:prod": "webpack -p"

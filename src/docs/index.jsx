@@ -7,7 +7,10 @@ function Demo() {
   return (
     <div>
       <h1>Demo with examples of the component</h1>
-      <MyComponent color="brown">Wow what a button</MyComponent>
+      <MyComponent
+        message="Hello guy!"
+        delay={30}
+      />
     </div>
   );
 }
