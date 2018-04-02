@@ -2,7 +2,7 @@
 
 Make typing effect for your text!
 
-### props
+### Props
 ```
 /** string */
 message: '',
