@@ -54,4 +54,3 @@ Typing.defaultProps = {
 }
 
 export default Typing
-defaultProps
