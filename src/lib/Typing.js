@@ -1,5 +1,5 @@
 import React from 'react'
-import { string, number } from 'prop-types'
+import { string, number, object } from 'prop-types'
 import './typing.css'
 
 let timeout
@@ -31,22 +31,32 @@ class Typing extends React.Component {
   )
 
   render () {
-    return this.props.text !== '' ? (
-      <span>
-        {this.renderText(this.props.text)}
+    const {
+      text,
+      className,
+      style,
+      as: As
+    } =this.props
+    return text !== '' ? (
+      <As className={className} style={style}>
+        {this.renderText(text)}
         <span className={`keyboard-cursor ${this.shouldBlink() ? 'blink' : ''}`}>|</span>
-      </span>
+      </As>
     ) : null
   }
 }
 
 Typing.propTypes = {
+  as: string,
+  style: object,
+  className: string,
   text: string,
   delay: number,
   cps: number,
 }
 
 Typing.defaultProps = {
+  as: 'span',
   /** Text */
   text: '',
   /** Last blinking duration in second */
