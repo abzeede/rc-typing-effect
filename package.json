@@ -1,13 +1,14 @@
 {
   "name": "rc-typing-effect",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A component that represent text as typing effect.",
   "main": "lib/index.js",
   "scripts": {
     "lib": "babel src/lib -d lib && cp src/lib/*.css lib",
     "lib:watch": "babel src/lib -w -d lib",
     "docs": "webpack-dev-server",
-    "docs:prod": "webpack -p"
+    "docs:prod": "webpack -p",
+    "publish": "npm run lib && npm run docs:prod && npm publish"
   },
   "license": "MIT",
   "peerDependencies": {
