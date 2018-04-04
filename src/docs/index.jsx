@@ -20,7 +20,7 @@ function Demo() {
         cps={15}
         delay={6}
         as="h2"
-      /> 
+      />
     </div>
   );
 }
