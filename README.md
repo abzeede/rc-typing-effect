@@ -8,12 +8,12 @@ yarn add rc-typing-effect or npm install rc-typing-effect --save
 
 ## Props
 ```
-/** string */
-message: '',
-/** Delay in millisecond */
-deplay: 0,
-/** Character per millisecond */
-cpms: 125,
+/** Text */
+text: ''
+/** Last blinking duration in second */
+delay: 3
+/** Character per second */
+cps: 5
 ```
 
 ## Demo
