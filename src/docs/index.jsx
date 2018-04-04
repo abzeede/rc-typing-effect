@@ -6,11 +6,21 @@ import "./styles.css";
 function Demo() {
   return (
     <div>
-      <h1>
-        <MyComponent
-          text="This is an example text. You might think this is bug but it i"
-        />
-      </h1>
+      <MyComponent
+        style={{ whiteSpace: 'pre' }}
+        text={`For God so loved the world that he gave his one and only Son,\nthat whoever believes in him shall not perish but have eternal life.\nJohn 3:16`}
+        cps={15}
+        delay={5.5}
+        as="h1"
+      />
+      <br/>
+      <MyComponent
+        style={{ whiteSpace: 'pre' }}
+        text={`เพราะว่าพระเจ้าทรงรักโลกจนได้ประทานพระบุตรองค์เดียวของพระองค์\nเพื่อทุกคนที่เชื่อในพระบุตรนั้นจะไม่พินาศแต่มีชีวิตนิรันดร์\nยอห์น 3:16`}
+        cps={15}
+        delay={6}
+        as="h2"
+      />
     </div>
   );
 }
