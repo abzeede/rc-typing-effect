@@ -1,6 +1,6 @@
 {
   "name": "rc-typing-effect",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A component that represent text as typing effect.",
   "main": "lib/index.js",
   "scripts": {
@@ -16,11 +16,11 @@
     "react-dom": "^15.3.0 || ^16.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.37",
-    "@babel/core": "^7.0.0-beta.37",
+    "@babel/cli": "^7.0.0-beta.41",
+    "@babel/core": "^7.0.0-beta.41",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.44",
-    "@babel/preset-env": "^7.0.0-beta.37",
-    "@babel/preset-react": "^7.0.0-beta.37",
+    "@babel/preset-env": "^7.0.0-beta.41",
+    "@babel/preset-react": "^7.0.0-beta.41",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.8",
     "html-webpack-plugin": "^2.30.1",
@@ -40,5 +40,8 @@
     "react",
     "animation",
     "typing-effect"
-  ]
+  ],
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
 }
