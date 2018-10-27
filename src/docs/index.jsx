@@ -8,7 +8,7 @@ function Demo() {
     <div>
       <MyComponent
         style={{ whiteSpace: 'pre' }}
-        text="This is an example test."
+        text="VASMKFDSAFDSAFDSAFDSA"
         cps={15}
         delay={5.5}
         as="h1"
@@ -16,7 +16,7 @@ function Demo() {
       <br/>
       <MyComponent
         style={{ whiteSpace: 'pre' }}
-        text="นี่คือข้อความทดสอบ"
+        text="VASMKFDSAFDSAFDSAFDSA"
         cps={15}
         delay={6}
         as="h2"
