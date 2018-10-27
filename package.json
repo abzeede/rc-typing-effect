@@ -1,6 +1,6 @@
 {
   "name": "rc-typing-effect",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "A component that represent text as typing effect.",
   "main": "lib/index.js",
   "scripts": {
